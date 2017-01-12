@@ -1,0 +1,28 @@
+.container{
+    padding:0 24rpx;
+}
+page {
+    background-color:#fbf9fe;
+    height:100%;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+.page-body-info {
+  background-color: transparent;
+}
+.page-body-buttons button {
+  color: #21c932;
+  margin: 0 100rpx;
+}
+.page-body-buttons button:after {
+  border-color: #21c932;
+}

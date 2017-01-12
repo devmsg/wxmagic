@@ -1,0 +1,6 @@
+<view class="title">
+  {{props.title}}
+  <view>
+    {{props.desc}}
+  </view>
+</view>
