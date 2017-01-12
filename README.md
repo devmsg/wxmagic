@@ -14,7 +14,7 @@
 > 初始化项目
 
 ```
-mxmagic create <name> 
+wxmagic create <name> 
 ```
 
 > 创建新组以及页面
@@ -26,15 +26,15 @@ generate <type> <name>
 > 构建
 
 ```
-mxmagic build  构建但不压缩   
+wxmagic build  构建但不压缩   
 
-mxmagic build -m 构建压缩代码
+wxmagic build -m 构建压缩代码
 
-mxmagic build -f 强制构建，不使用缓存 
+wxmagic build -f 强制构建，不使用缓存 
 ```
 
 > 实施监听
 
 ```
-mxmagic watch   编译当前项目并检测文件改动
+wxmagic watch   编译当前项目并检测文件改动
 ```
