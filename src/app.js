@@ -1,5 +1,4 @@
 import wx from 'labrador'
-import util from './utils/util'
 
 export default class {
 
