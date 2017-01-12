@@ -2,6 +2,19 @@
 
 -- 版本 0.1.4
 
+## 启动项目
+
+```
+wxmagic create wxapp  //初始化项目
+
+cd wxapp     		       //进入到该项目
+
+npm install           //安装依赖
+
+wxmagic build       // 构建小程序项目（dist目录）
+
+```
+
 ## 配置开发工具
 
 项目初始化后使用WebStorm或Sublime等你习惯的IDE打开项目根目录。然后打开 微信web开发者工具 新建项目，本地开发目录选择 dist 目标目录。
@@ -20,7 +33,7 @@ wxmagic create <name>
 > 创建新组以及页面
 
 ```
-generate <type> <name>
+wxmagic generate <type> <name>
 ```
 
 > 构建
