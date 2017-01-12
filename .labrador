@@ -1,0 +1,26 @@
+{
+  "define": {
+    "API_ROOT": ""
+  },
+  "npmMap": {
+    "lodash.isplainobject": "lodash/isPlainObject",
+    "lodash.isstring": "lodash/isString",
+    "lodash.issymbol": "lodash/isSymbol",
+    "lodash-es": "lodash"
+  },
+  "uglify": {
+    "mangle": [],
+    "compress": {
+      "warnings": false
+    }
+  },
+  "classNames": { },
+  "env": {
+    "development": {},
+    "production": {
+      "define": {
+        "API_ROOT": "https://xxx.xxx.xxx"
+      }
+    }
+  }
+}
