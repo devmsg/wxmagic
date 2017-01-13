@@ -81,6 +81,32 @@ wxmagic build -f 强制构建，不使用缓存
 wxmagic watch   编译当前项目并检测文件改动
 ```
 
-## 开发
+## 开发流程
 
-- 配置`.labrador` 
+- 在项目中运行 `wxmagic watch`
+- 在WebStorm中编码，保存
+- 切换到 *微信web开发者工具* 中调试、预览
+- 再回到WebStorm中编码
+
+
+## 关于labrador 库
+
+`labrador` 库对全局的 `wx` 变量进行了封装，将所有 `wx` 对象中的异步方法进行了Promise支持， 除了同步的方法，这些方法往往以 `on*`、`create*`、`stop*`、`pause*`、`close*` 开头或以 `*Sync` 结尾。在如下代码中使用 `labrador` 库。
+
+```js
+import wx, { Component, PropTypes } from 'labrador';
+
+wx.wx;          // 原始的全局 wx 对象
+wx.app;         // 和全局的 getApp() 函数效果一样，代码风格不建议粗暴地访问全局对象和方法
+wx.currentPages // 对全局函数 getCurrentPages() 优雅的封装
+Component;      // Labrador 自定义组件基类
+PropTypes;      // Labrador 数据类型校验器集合
+
+wx.login;       // 封装后的微信登录接口
+wx.getStorage;  // 封装后的读取缓存接口
+//... 更多请参见 https://mp.weixin.qq.com/debug/wxadoc/dev/api/
+```
+
+> **注意** 
+
+我们建议不要再使用 `wx.getStorageSync()` 等同步阻塞方法，而在 `async` 函数中使用 `await wx.getStorage()` 异步非阻塞方法提高性能，除非遇到特殊情况。
