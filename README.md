@@ -4,6 +4,7 @@
 
 ## 全局安装wxmagic-cli脚手架
 
+node > 6.5
 ```$xslt
 npm install wxmagic-cli -g
 ```
