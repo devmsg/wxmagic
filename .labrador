@@ -1,6 +1,6 @@
 {
   "define": {
-    "API_ROOT": ""
+    "API_ROOT": "https://api.devmsg.com"
   },
   "npmMap": {
     "lodash.isplainobject": "lodash/isPlainObject",

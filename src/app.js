@@ -1,4 +1,5 @@
 import wx from 'labrador'
+import Util from './utils/util'
 
 export default class {
 
@@ -7,13 +8,19 @@ export default class {
 	};
 
 	async onLaunch() {
-		let res  = await wx.getStorage({ key: "logs" });
-		let logs = res.data || [];
-		logs.unshift(Date.now());
-		await wx.setStorage({
-			key : 'logs',
-			data: logs
-		});
+		try {
+			let rep =  await wx.getStorage({
+				key: "logs",
+			});
+			let logs = rep.data || [];
+			logs.unshift(Date.now());
+			await wx.setStorage({
+				key : "logs",
+				data: logs
+			});
+		} catch (e) {
+			console.error(e);
+		}
 	}
 
 	async getUserInfo() {
