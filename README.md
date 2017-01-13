@@ -8,6 +8,19 @@
 npm install wxmagic-cli -g
 ```
 
+## 创建项目
+
+```
+wxmagic create wxapp  		//初始化项目
+
+cd wxapp     		       	//进入到该项目
+
+npm install           		//安装依赖
+
+wxmagic build       		// 构建小程序项目（dist目录）
+
+```
+
 ## 项目目录结构
 
 ```sh
@@ -30,18 +43,6 @@ wxapp                # 项目根目录
 
 > **注意** dist目录中的所有文件是由wxmagic命令编译生成，请勿直接修改
 
-## 创建项目
-
-```
-wxmagic create wxapp  		//初始化项目
-
-cd wxapp     		       	//进入到该项目
-
-npm install           		//安装依赖
-
-wxmagic build       		// 构建小程序项目（dist目录）
-
-```
 
 ## 配置开发工具
 
