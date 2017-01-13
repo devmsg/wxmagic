@@ -110,3 +110,35 @@ wx.getStorage;  // 封装后的读取缓存接口
 > **注意** 
 
 我们建议不要再使用 `wx.getStorageSync()` 等同步阻塞方法，而在 `async` 函数中使用 `await wx.getStorage()` 异步非阻塞方法提高性能，除非遇到特殊情况。
+
+## 模板的数据绑定
+
+模板中所有变量绑定需要增加指定 `state.` 或 `props.` 。
+
+> wxml
+
+```
+  <view>
+    <text class="{{className}}">{{title}}</text>
+    <template is="foo" data="{{...obj,bar}}"/>
+  </view>
+```
+更新为
+
+> xml
+```xml
+  <view>
+    <text class="{{state.className}}">{{props.title}}</text>
+    <template is="foo" data="{{...state.obj,bar:state.bar}}"/>
+  </view>
+```
+
+## 贡献者
+
+[devmsg](https://www.devmsg.com)
+
+[梁兴臣](https://github.com/liangxingchen)
+
+## 开源协议
+
+本项目依据MIT开源协议发布，允许任何组织和个人免费使用。
