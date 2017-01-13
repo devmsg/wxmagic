@@ -11,7 +11,7 @@ npm install wxmagic-cli -g
 ## 项目目录结构
 
 ```sh
-wxapp                 # 项目根目录
+wxapp                # 项目根目录
 ├── .labrador        # wxmaigc项目配置文件
 ├── .babelrc         # babel配置文件
 ├── .build/          # wxmagic编译临时目录
