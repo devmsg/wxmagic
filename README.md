@@ -12,9 +12,9 @@ npm install wxmagic-cli -g
 
 ```sh
 wxapp                 # 项目根目录
-├── .labrador        # Labrador项目配置文件
+├── .labrador        # wxmaigc项目配置文件
 ├── .babelrc         # babel配置文件
-├── .build/          # Labrador编译临时目录
+├── .build/          # wxmagic编译临时目录
 ├── package.json
 ├── dist/            # 编译目录（小程序）
 ├── node_modules/
