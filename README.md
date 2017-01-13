@@ -8,6 +8,28 @@
 npm install wxmagic-cli -g
 ```
 
+## 项目目录结构
+
+```sh
+wxapp                 # 项目根目录
+├── .labrador        # Labrador项目配置文件
+├── .babelrc         # babel配置文件
+├── .build/          # Labrador编译临时目录
+├── package.json
+├── dist/            # 编译目录（小程序）
+├── node_modules/
+└── src/             # 源码目录
+    ├── app.js
+    ├── app.json
+    ├── app.less
+    ├── components/  # 通用组件目录
+    ├── pages/       # 页面目录
+    └── utils/
+
+```
+
+> **注意** dist目录中的所有文件是由wxmagic命令编译生成，请勿直接修改
+
 ## 创建项目
 
 ```
@@ -57,3 +79,7 @@ wxmagic build -f 强制构建，不使用缓存
 ```
 wxmagic watch   编译当前项目并检测文件改动
 ```
+
+## 开发
+
+- 配置`.labrador` 
