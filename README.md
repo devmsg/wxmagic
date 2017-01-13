@@ -2,16 +2,22 @@
 
 -- 版本 0.1.4
 
-## 启动项目
+## 全局安装wxmagic-cli脚手架
+
+```$xslt
+npm install wxmagic-cli -g
+```
+
+## 创建项目
 
 ```
-wxmagic create wxapp  //初始化项目
+wxmagic create wxapp  		//初始化项目
 
-cd wxapp     		       //进入到该项目
+cd wxapp     		       	//进入到该项目
 
-npm install           //安装依赖
+npm install           		//安装依赖
 
-wxmagic build       // 构建小程序项目（dist目录）
+wxmagic build       		// 构建小程序项目（dist目录）
 
 ```
 
@@ -30,7 +36,7 @@ wxmagic build       // 构建小程序项目（dist目录）
 wxmagic create <name> 
 ```
 
-> 创建新组以及页面
+> 创建新组件以及页面
 
 ```
 wxmagic generate <type> <name>
