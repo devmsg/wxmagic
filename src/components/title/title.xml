@@ -1,5 +1,5 @@
 <view class="title">
-  {{props.title}}
+    {{props.title}}
   <view>
     {{props.desc}}
   </view>

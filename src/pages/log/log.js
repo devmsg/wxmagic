@@ -2,6 +2,7 @@ import wx, {
 	Component,
 	PropTypes
 } from 'labrador'
+
 import Title from '../../components/title/title'
 
 class log extends Component {

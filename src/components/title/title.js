@@ -1,6 +1,6 @@
 import wx,{ Component, PropTypes } from 'labrador';
 
-class title extends Component {
+class Title extends Component {
   //当前组件的props参数数据类型的定义
   static propTypes ={};
   //当前组件默认的各项参数值
@@ -20,4 +20,4 @@ class title extends Component {
   }
 }
 
-export default title;
+export default Title;
